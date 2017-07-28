@@ -17,6 +17,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [[MXAppConfig shareInstance]reset];
+    self.window.rootViewController = [[RootViewController alloc]init];
+    
     return YES;
 }
 
